@@ -22,7 +22,7 @@ export default function CTA() {
 
     <div className="mx-auto h-24 w-24 rounded-full overflow-hidden">
       <motion.img
-        src="/web-logo-2.svg "
+        src="/web-logo.jpg"
         alt="logo"
         className="mx-auto h-24 w-24 rounded-full"
         style={{
