@@ -21,16 +21,20 @@ export default function CTA() {
       </motion.div>
 
       <motion.img
-        src="/logo.svg"
+        src="/web-logo.jpg"
         alt="logo"
-        className="mx-auto h-24 w-24"
+        className="mx-auto h-24 w-24 rounded-full"
         variants={itemVariants}
       />
 
       <motion.div variants={itemVariants}>
+      <TextBlur
+          className="text-center text-3xl mb-4 tracking-tighter sm:text-5xl font-bold "
+          text="STARK FUNDED"
+        />
         <TextBlur
           className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="A Simple Next.js Waitlist Template with Notion as CMS"
+          text="World's First Ever Certified Firm By a Stock Exchange"
         />
       </motion.div>
 

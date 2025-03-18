@@ -18,7 +18,7 @@ const buttonVariants = cva(
         ghost: "hover:bg-accent hover:text-accent-foreground",
         link: "text-primary underline-offset-4 hover:underline",
         expandIcon:
-          "group relative border border-input bg-[#1B1B1E] text-yellow-100 hover:bg-accent hover:text-yellow-200",
+          "group relative border border-input bg-[#1B1B1E] text-white hover:bg-accent hover:text-white",
         ringHover:
           "bg-primary text-primary-foreground transition-all duration-300 hover:bg-primary/90 hover:ring-2 hover:ring-primary/90 hover:ring-offset-2",
         shine:
@@ -87,7 +87,7 @@ const EnhancedButton = React.forwardRef<
         ref={ref}
         {...props}>
         {Icon && iconPlacement === "left" && (
-          <div className="w-0 translate-x-[0%] pr-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-100 group-hover:pr-2 group-hover:opacity-100">
+          <div className="w-0 translate-x-[0%] pr-0 opacity-0 transition-all duration-200 group-hover:w-5 group-hover:translate-x-100 group-hover:pr-2 group-hover:opacity-100 ">
             <Icon />
           </div>
         )}
