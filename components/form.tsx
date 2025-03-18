@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { ChangeEvent } from "react";
 import { motion } from "framer-motion";
-import { FaFacebook, FaGithub, FaXTwitter } from "react-icons/fa6";
+import { FaFacebook, FaGithub, FaInstagram, FaXTwitter } from "react-icons/fa6";
 import { Input } from "@/components/ui/input";
 import { FaArrowRightLong } from "react-icons/fa6";
 import { EnhancedButton } from "@/components/ui/enhanced-btn";
@@ -62,17 +62,10 @@ export default function Form({
         className="mt-4 flex w-full items-center justify-center gap-1 text-muted-foreground">
         <p>For any queries, reach out at </p>
         <Link
-          href="#"
+          href="https://www.instagram.com/starkfunded?igsh=MTJqZDlreHJyMGQwbw%3D%3D&utm_source=qr"
           rel="noopener noreferrer"
           target="_blank">
-          <FaXTwitter className="h-4 w-4 transition-all duration-200 ease-linear hover:text-white" />
-        </Link>
-        or
-        <Link
-          href="#"
-          rel="noopener noreferrer"
-          target="_blank">
-          <FaFacebook className="ml-0.5 h-5 w-5 transition-all duration-200 ease-linear hover:text-white" />
+          <FaInstagram className="h-6 w-6 transition-all duration-200 ease-linear hover:text-white" />
         </Link>
       </motion.div>
     </motion.div>

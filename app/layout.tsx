@@ -7,7 +7,7 @@ import { Analytics } from "@vercel/analytics/react";
 const FigtreeFont = Figtree({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Stark Funded Logo",
+  title: "Stark Funded",
   description:
     "A Trading Website",
 };

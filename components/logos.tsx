@@ -3,14 +3,59 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { containerVariants, itemVariants } from "@/lib/animation-variants";
 import TextBlur from "./ui/text-blur";
+import {
+  FaArrowsRotate,
+  FaBullseye,
+  FaChartSimple,
+  FaClock,
+  FaDollarSign,
+  FaPercent,
+  FaRibbon,
+  FaTrophy,
+} from "react-icons/fa6";
+import { title } from "process";
 
 const logos = [
-  { href: "https://nextjs.org", src: "/nextjs.svg", alt: "Next.js Logo" },
-  { href: "https://notion.so", src: "/notion.svg", alt: "Notion Logo" },
-  { href: "https://resend.com", src: "/resend.svg", alt: "Resend Logo" },
-  { href: "https://upstash.com", src: "/upstash.svg", alt: "Upstash Logo" },
-  { href: "https://ui.shadcn.com", src: "/shadcn.svg", alt: "shadcn Logo" },
-  { href: "https://vercel.com", src: "/vercel.svg", alt: "Vercel Logo" },
+  {
+    icon: <FaBullseye />,
+    title: "Lowest Profit Target",
+    desc: "Only 7% profit target in phase one - the most achievable in the industry",
+  },
+  {
+    icon : <FaChartSimple/>,
+    title : "News Trading Allowd",
+    desc : "Trade during high-impact news events without restrictions"
+  },
+  {
+    icon: <FaClock />,
+    title: "Lightning-Fast Payouts",
+    desc: "12-hours payout guarantee or get $1,000!",
+  },
+  {
+    icon: <FaPercent />,
+    title: "Higher Drawdown Limit",
+    desc: "Flexible 12% maxium drawdown for better trading freedom",
+  },
+  {
+    icon: <FaDollarSign />,
+    title: "Affordable Accounts",
+    desc: "Most competitive pricing in the industry for funded accounts",
+  },
+  {
+    icon: <FaRibbon />,
+    title: "Transparent Pricing",
+    desc: "Best spreads, zero commision, no hidden fees!",
+  },
+  {
+    icon: <FaArrowsRotate />,
+    title: "Evaluation Fee Refund",
+    desc: "Get your evaluation fee back upon successfull completion",
+  },
+  {
+    icon: <FaTrophy />,
+    title: "Rewards Up to 100%",
+    desc: "Earn maximum rewards for consistent performance",
+  },
 ];
 
 export default function Logos() {
@@ -20,39 +65,35 @@ export default function Logos() {
       variants={containerVariants}
       initial="hidden"
       animate="visible">
-      <motion.div variants={itemVariants}>
+      <motion.div variants={itemVariants}
+        className="flex justify-center"
+      >
         <TextBlur
-          className="text-center text-2xl font-medium tracking-tight text-zinc-200 md:text-3xl"
-          text="Powered by"
+          className="text-center text-4xl font-semibold tracking-tight text-zinc-200 md:text-5xl lg:text-5xl lg:w-[60%] md:w-[60%] sm:w-[80%]"
+          text="The World's First Certified Prop Firm By a Stock Exchange"
         />
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
           className="text-center text-base text-zinc-300 sm:text-lg"
-          text="Simple and powerful tools that help you build faster"
+          text="Unmatched Benefits for Serious Traders"
           duration={0.8}
         />
       </motion.div>
 
       <motion.div
         variants={itemVariants}
-        className="mt-4 grid w-full grid-cols-2 items-center justify-center gap-4 md:mt-6 md:grid-cols-3 md:gap-6">
+        className="mt-4 grid w-full grid-cols-1 items-center justify-center gap-4 md:mt-6 md:grid-cols-2 md:gap-6">
         {logos.map((logo, index) => (
-          <Link
+          <div
             key={index}
-            href={logo.href}
             rel="noopener noreferrer"
-            target="_blank"
-            className="flex h-24 items-center justify-center rounded-lg border bg-zinc-900 p-8 transition-all duration-150 ease-in-out md:hover:border-zinc-700 md:hover:bg-accent">
-            <Image
-              src={logo.src}
-              alt={logo.alt}
-              width={100}
-              height={100}
-              className="h-auto w-32 opacity-85"
-            />
-          </Link>
+            className="flex h-52 flex-col items-center justify-center gap-2 rounded-lg border bg-zinc-900 p-8 transition-all duration-150 ease-in-out md:hover:border-zinc-700 md:hover:bg-accent">
+            <div className="mb-4 self-start text-4xl">{logo.icon}</div>
+            <h1 className="self-start text-2xl font-bold">{logo.title}</h1>
+            <p className="self-start">{logo.desc}</p>
+          </div>
         ))}
       </motion.div>
     </motion.div>

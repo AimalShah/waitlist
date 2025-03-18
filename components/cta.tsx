@@ -21,7 +21,7 @@ export default function CTA() {
       </motion.div>
 
       <motion.img
-        src="/web-logo.jpg"
+        src="/web-logo-2.svg"
         alt="logo"
         className="mx-auto h-24 w-24 rounded-full"
         variants={itemVariants}
@@ -33,15 +33,15 @@ export default function CTA() {
           text="STARK FUNDED"
         />
         <TextBlur
-          className="text-center text-3xl font-medium tracking-tighter sm:text-5xl"
-          text="World's First Ever Certified Firm By a Stock Exchange"
+          className="text-center lg:text-3xl font-medium tracking-tighter text-3xl"
+          text="JOIN WAITLIST"
         />
       </motion.div>
 
       <motion.div variants={itemVariants}>
         <TextBlur
           className="mx-auto max-w-[27rem] pt-1.5 text-center text-base text-zinc-300 sm:text-lg"
-          text="Join the waitlist to get early access of the product and recieve updates on the progress!"
+          text="Unlock exclusive benefits, early access, and the latest updates - delivered straight to your inbox."
           duration={0.8}
         />
       </motion.div>
