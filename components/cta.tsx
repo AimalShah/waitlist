@@ -26,7 +26,7 @@ export default function CTA() {
         alt="logo"
         className="mx-auto h-24 w-24 rounded-full"
         style={{
-          scale : 1.1
+          scale : 1.01
         }}
         variants={itemVariants}
         />
