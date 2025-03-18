@@ -20,12 +20,17 @@ export default function CTA() {
         </div>
       </motion.div>
 
+    <div className="mx-auto h-24 w-24 rounded-full overflow-hidden">
       <motion.img
-        src="/web-logo-2.svg"
+        src="/web-logo-2.svg "
         alt="logo"
         className="mx-auto h-24 w-24 rounded-full"
+        style={{
+          scale : 1.1
+        }}
         variants={itemVariants}
-      />
+        />
+      </div>
 
       <motion.div variants={itemVariants}>
       <TextBlur
