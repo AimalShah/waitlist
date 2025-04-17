@@ -9,7 +9,7 @@ const FigtreeFont = Figtree({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Stark Funded",
   description:
-    "A Trading Website",
+    "A Trading Company",
   icons : {
     icon : '/web-logo-2.svg'
   }
